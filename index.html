@@ -28,7 +28,6 @@
         h1 {
             font-weight: 900;
             font-size: 5em;
-            line-break: 1;
         }
 
         #video {
@@ -43,10 +42,16 @@
             position: relative;
             z-index: 999;
         }
+
+        @media only screen and (max-width: 480px) {
+            h1 {
+                font-size: 2.5em;
+            }
+        }
     </style>
 </head>
 <body>
-    <video autoplay muted loop id="video">
+    <video autoplay muted loop playsinline id="video">
         <source src="onlygropemyass.mp4" type="video/mp4">
     </video>
 
